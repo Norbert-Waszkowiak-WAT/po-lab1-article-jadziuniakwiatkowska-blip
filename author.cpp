@@ -3,7 +3,8 @@
 #include "author.h"
 //using namespace std;
 Author::Author(string name, string surname):name(name),surname(surname){}
-    void Author::print(){
+Author::Author(): name(""), surname("") {}    
+void Author::print(){
         cout<<name<<" "<<surname<<endl;
     }
     string Author::toString(){
